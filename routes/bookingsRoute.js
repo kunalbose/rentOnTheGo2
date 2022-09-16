@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Booking = require("../models/bookingModel");
 const Car = require("../models/cars");
-const stripe = require("stripe")("sk_test_51Lgwr4SCUQGDmdZ1Mj2D9GQ9dHyzSN1yBFk2h9NX7JB9uIVEbWngcJTEX5dr1OGJsDtSACcdew55MXNsZEVX9lwc00dqE1mUfp");
+const stripe = require("stripe")("YOUR_STRIPE_TEST_KEY");
 const { v4: uuidv4 } = require('uuid');
 
 router.post("/bookcar", async (req, res)=>{
